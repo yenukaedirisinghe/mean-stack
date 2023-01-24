@@ -6,6 +6,7 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { StadiumComponent } from './stadium/stadium.component';
 import {LoginComponent  } from './login/login.component';
 
+
 const routes: Routes = [
  { path: '', redirectTo: 'home', pathMatch: 'full' },
  { path: 'home', component: EmployeesListComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
  //{ path: 'employees/new', component: LoginComponent },
  { path: 'login', component: LoginComponent},
  { path: 'employees/edit/:id', component: EditEmployeeComponent }]; // <-- add this line
+
 
  
 @NgModule({

@@ -41,6 +41,7 @@ import { EmployeeService } from '../employee.service';
   
    <button class="btn btn-primary mt-3" [routerLink]="['new']">Add a New Employee</button>
    </div>
+   <app-footer></app-footer>
  `,
   styles: [`.hero {
     display: flex;

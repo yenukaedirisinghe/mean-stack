@@ -12,7 +12,8 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { StadiumComponent } from './stadium/stadium.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component'; // <-- add this line
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FooterComponent } from './footer/footer.component'; // <-- add this line
  
 @NgModule({
  declarations: [
@@ -24,7 +25,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component'; // <-- add this l
    StadiumComponent,
    LoginComponent,
    RegisterComponent,
-   NavBarComponent
+   NavBarComponent,
+   FooterComponent
  ],
  imports: [
    BrowserModule,
