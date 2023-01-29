@@ -1,50 +1,61 @@
-<app-nav-bar> </app-nav-bar>
+<app-nav-bar-two> </app-nav-bar-two>
 
 <div class="stadium-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-6">
-    
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Ticket Details</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">IND V NZ</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Date</li>
+                    <li class="list-group-item">Total</li>
+                    <li class="list-group-item">Time</li>
+                    <li class="list-group-item text-center"><button type="button" class="btn btn-success">Get Your Ticket</button></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-<div class="stadium">
-<div class="pitch"></div>
+            <div class="col-8 d-flex justify-content-center">
+              <div class="stadium">
+              <div class="pitch"></div>
 
-  <div class="block-A" id="block_A">
-    <div *ngFor="let row of block_A"> 
-      <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="selectblock_A(block_A)">
-        {{ seat.number }}
-      </button> 
-    </div>
-    <br>
-  </div>
+                <div class="block-A" id="block_A">
+                  <div *ngFor="let row of block_A"> 
+                    <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="clickOnSeat(seat.number)" [id]="seat.number" [ngStyle]="{'background-color': backgroundColor}">
+                      {{ seat.number }}
+                    </button> 
+                  </div>
+                  <br>
+                </div>
 
-  <div class="block-B" id="block_B">
-    <div *ngFor="let row of block_B"> 
-      <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="selectblock_B(block_B)">
-        {{ seat.number }}
-      </button> 
-    </div>
-  </div>
+                <div class="block-B" id="block_B">
+                  <div *ngFor="let row of block_B"> 
+                    <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="clickOnSeat(seat.number)" [id]="seat.number" [ngStyle]="{'background-color': backgroundColor}">
+                      {{ seat.number }}
+                    </button> 
+                  </div>
+                </div>
 
-  <div class="block-C" id="block_C">
-    <div *ngFor="let row of block_C"> 
-      <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="selectblock_C(block_C)">
-        {{ seat.number }}
-      </button> 
-    </div>
-  </div>
+                <div class="block-C" id="block_C">
+                  <div *ngFor="let row of block_C"> 
+                    <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="clickOnSeat(seat.number)" [id]="seat.number" [ngStyle]="{'background-color': backgroundColor}">
+                      {{ seat.number }}
+                    </button> 
+                  </div>
+                </div>
 
 
-  <div class="block-D" id="block_D">
-    <div *ngFor="let row of block_D"> 
-      <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="selectblock_D(block_D)">
-        {{ seat.number }}
-      </button> 
-    </div>
-  </div>
-  </div>
-</div>
+                <div class="block-D" id="block_D">
+                  <div *ngFor="let row of block_D"> 
+                    <button *ngFor="let seat of row" [ngClass]="{'occupied': seat.occupied}" (click)="clickOnSeat(seat.number)" [id]="seat.number" [ngStyle]="{'background-color': backgroundColor}">
+                      {{ seat.number }}
+                    </button> 
+                  </div>
+                </div>
+                </div>
+            </div>
 
   </div> </div>
 </div>

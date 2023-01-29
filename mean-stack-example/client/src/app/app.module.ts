@@ -13,7 +13,9 @@ import { StadiumComponent } from './stadium/stadium.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { FooterComponent } from './footer/footer.component'; // <-- add this line
+import { FooterComponent } from './footer/footer.component';
+import { MatchListComponent } from './match-list/match-list.component';
+import { NavBarTwoComponent } from './nav-bar-two/nav-bar-two.component'; // <-- add this line
  
 @NgModule({
  declarations: [
@@ -26,7 +28,9 @@ import { FooterComponent } from './footer/footer.component'; // <-- add this lin
    LoginComponent,
    RegisterComponent,
    NavBarComponent,
-   FooterComponent
+   FooterComponent,
+   MatchListComponent,
+   NavBarTwoComponent
  ],
  imports: [
    BrowserModule,

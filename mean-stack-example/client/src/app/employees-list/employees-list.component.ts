@@ -11,7 +11,7 @@ import { EmployeeService } from '../employee.service';
  <img src="https://img.freepik.com/premium-photo/cricket-stadium-with-ball-lights-flashes-3d-render_3544-1285.jpg?w=2000">
  <div class="hero-content">
      <h1>Welcome to Our Website</h1>
-     <button>Book Tikets</button>
+     <button [routerLink]="['match']">Book Tikets</button>
  </div>
 </div>
    <h2 class="text-center m-5">Employees List</h2>
@@ -39,7 +39,7 @@ import { EmployeeService } from '../employee.service';
        </tbody>
    </table>
   
-   <button class="btn btn-primary mt-3" [routerLink]="['new']">Add a New Employee</button>
+  
    </div>
    <app-footer></app-footer>
  `,
